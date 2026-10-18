@@ -21,6 +21,27 @@ html[dir=rtl] .hero-card{transform:rotate(-2deg)}html[dir=rtl] .eyebrow,html[dir
 @media(max-width:560px){.hero h1{font-size:42px}.topline{font-size:10px}.nav{min-height:72px}.features{grid-template-columns:1fr 1fr 1fr}.feature{font-size:11px;padding:12px 5px}.navtools{gap:6px}.navtools select{min-width:70px;padding:8px 5px}.switch button{padding:6px 7px}.wordmark strong{font-size:21px}.wordmark span{font-size:9px}.brand-logo{width:46px;height:46px}.nav{gap:7px}.photo{height:260px}.product-body{padding:20px}}
 
 .poshtkuh-gallery{padding:24px;border-top:1px solid #e7dcc8;background:#fffdf8}.poshtkuh-gallery-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:15px;color:#143d2f}.poshtkuh-gallery-head strong{font-size:19px}.poshtkuh-gallery-head span{font-size:13px;color:#7b775f}.poshtkuh-gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.poshtkuh-gallery-item{display:block;overflow:hidden;border-radius:12px;border:1px solid #e5d6bb;background:#fff;box-shadow:0 8px 20px #172f2710}.poshtkuh-gallery-item img{width:100%;height:auto;aspect-ratio:1;display:block;object-fit:cover;transition:transform .2s}.poshtkuh-gallery-item:hover img{transform:scale(1.035)}.poshtkuh-gallery-item span{display:block;padding:8px;font-size:12px;text-align:center;color:#264c40}@media(max-width:720px){.poshtkuh-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.poshtkuh-gallery-head{flex-direction:column;align-items:flex-start}}
+
+/* POSHTKUH mobile header: prevent brand and language/currency controls from overlapping. */
+@media (max-width: 760px) {
+  header .nav{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;padding-top:12px;padding-bottom:12px;min-height:0;align-items:center}
+  header .brand{grid-row:1;min-width:0;width:100%;justify-content:center;gap:10px}
+  header .brand .wordmark{min-width:0;align-items:flex-start}
+  header .brand .wordmark strong{font-size:clamp(22px,5.8vw,28px);white-space:nowrap}
+  header .brand .wordmark span{font-size:10px;letter-spacing:.08em}
+  header .navtools{grid-row:2;display:flex;justify-content:center;flex-wrap:wrap;gap:10px;width:100%;min-width:0}
+  header .navtools select{flex:0 0 auto;max-width:110px;min-width:95px}
+  header .switch{flex:0 1 auto;max-width:100%}
+  header .switch button{padding:7px 11px;white-space:nowrap}
+  header .navlinks{display:none}
+  html[dir=rtl] header .brand{direction:ltr}
+}
+@media (max-width:365px){
+  header .navtools{gap:7px}
+  header .switch button{padding:7px 8px;font-size:12px}
+  header .navtools select{min-width:82px;max-width:88px;font-size:12px;padding:8px 6px}
+}
+
 </style>
 </head>
 <body>
