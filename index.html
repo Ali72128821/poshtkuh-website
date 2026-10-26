@@ -41,7 +41,26 @@ html[dir=rtl] .hero-card{transform:rotate(-2deg)}html[dir=rtl] .eyebrow,html[dir
   header .switch button{padding:7px 8px;font-size:12px}
   header .navtools select{min-width:82px;max-width:88px;font-size:12px;padding:8px 6px}
 }
+@media (max-width: 760px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  #new-products {
+    grid-template-columns: 1fr !important;
+  }
+}
 </style>
 </head>
 <body>
