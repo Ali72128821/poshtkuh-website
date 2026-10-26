@@ -106,18 +106,33 @@ html[dir=rtl] .hero-card{transform:rotate(-2deg)}html[dir=rtl] .eyebrow,html[dir
       en:"Akbari Pistachios",
       fa:"پسته اکبری",
       ar:"فستق أكبري",
+      details: {
+  en: "Premium Akbari Pistachios | Size: 20–22 nuts per ounce | Raw & Unsalted / Salted & Saffron-Flavored | Origin: Iran | Packaging: 500 g & 1 kg",
+  fa: "پسته اکبری لوکس | سایز: انس ۲۰–۲۲ | خام و بدون نمک / شور و زعفرانی | محصول ایران | بسته‌بندی: ۵۰۰ گرم و ۱ کیلوگرم",
+  ar: "فستق أكبري فاخر | الحجم: ٢٠–٢٢ حبة للأونصة | نيّئ غير مملح / مملح بنكهة الزعفران | المنشأ: إيران | العبوات: ٥٠٠ غرام و١ كغ"
+},
       images:["Bowl of Roasted Pistachios.png","Premium Poshtkuh Akbari Pistachios.png"]
     },
     {
       en:"Whole Dried Figs",
       fa:"انجیر خشک کامل",
       ar:"تين مجفف كامل",
+      details: {
+  en: "Premium Large Dried Figs | Grade: 3A (AAA) | Origin: Estahban, Fars, Iran | Packaging: 500 g & 1 kg",
+  fa: "انجیر خشک درشت | درجه: 3A | محصول استهبان، استان فارس، ایران | بسته‌بندی: ۵۰۰ گرم و ۱ کیلوگرم",
+  ar: "تين مجفف فاخر كبير الحجم | الدرجة: 3A | المنشأ: استهبان، محافظة فارس، إيران | العبوات: ٥٠٠ غرام و١ كغ"
+},
       images:["Bowl of golden dried figs.png","Premium Poshtkuh Dried Figs Packaging.png"]
     },
     {
       en:"Open Dried Figs",
       fa:"انجیر خشک بازشده",
       ar:"تين مجفف مفتوح",
+      details: {
+  en: "Premium Open Dried Figs | Type: Open (Perak) | Origin: Estahban, Fars, Iran | Packaging: 500 g & 1 kg",
+  fa: "انجیر خشک پرک | نوع: بازشده | محصول استهبان، استان فارس، ایران | بسته‌بندی: ۵۰۰ گرم و ۱ کیلوگرم",
+  ar: "تين مجفف مفتوح فاخر | النوع: مفتوح (بيراك) | المنشأ: استهبان، محافظة فارس، إيران | العبوات: ٥٠٠ غرام و١ كغ"
+},
       images:["sunlit_copper_bowl_of_dried_figs.png","Premium Poshtkuh Dried Figs Packaging(1).png"]
     }
   ];
@@ -134,6 +149,9 @@ html[dir=rtl] .hero-card{transform:rotate(-2deg)}html[dir=rtl] .eyebrow,html[dir
                loading="lazy"
                style="width:100%;border-radius:12px;margin-bottom:12px">
         `).join("")}
+        <p style="color:#42594d;font-size:14px;line-height:2;text-align:start;margin:12px 0 20px;">
+  ${p.details?.[lang] || ""}
+</p>
         <a href="https://asllmarket.org/li-najmi"
            target="_blank" rel="noopener noreferrer"
            style="display:block;text-align:center;background:#0c342a;color:white;padding:10px;border-radius:20px">
